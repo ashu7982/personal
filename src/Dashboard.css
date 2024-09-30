@@ -1,0 +1,115 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dashboard-love-message {
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 30px;
+    animation: lovePulse 1.5s infinite alternate;
+  }
+  
+  /* Keyframes for a pulsing animation */
+  @keyframes lovePulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .logout-button:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .dashboard-image {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 30px 15px;
+    }
+  
+    .dashboard-title {
+      font-size: 2rem;
+    }
+  
+    .dashboard-love-message {
+      font-size: 1.5rem;
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .logout-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .dashboard-image {
+      width: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-title {
+      font-size: 1.8rem;
+    }
+  
+    .dashboard-love-message {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  
+    .logout-button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  
+    .dashboard-image {
+      width: 120px;
+    }
+  }
+  
